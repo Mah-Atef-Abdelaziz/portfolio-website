@@ -335,8 +335,8 @@ h2 {
     background: linear-gradient(180deg, var(--brand), var(--brand-2));
 }
 .item-media img {
-    width: 92px;
-    height: 92px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     border: 1px solid var(--border);
     border-radius: 10px;
