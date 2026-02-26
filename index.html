@@ -1,33 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mahmoud Atef | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-
-    <header>
-        <h1>Mahmoud Atef</h1>
-        <p>Software Engineer | Cloud | AI</p>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="logo" href="#home">MA</a>
+            <button id="themeToggle" aria-label="Toggle theme"></button>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"></button>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>I build scalable cloud and AI systems.</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>Sakanly Real Estate Platform</li>
-            <li>AI Research Projects</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2026 Mahmoud Atef</p>
+    <main id="home">
+        <section class="hero section">
+            <div class="container">
+                <h1 class="title">Mahmoud Atef</h1>
+                <p class="subtitle">Software Engineer focused on Cloud, AI, and scalable systems</p>
+                <div class="cta">
+                    <a class="btn primary" href="resume_mahmoud_atef.pdf" target="_blank" rel="noopener">Download CV</a>
+                    <a class="btn" href="#contact">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>Software Engineer with a focus on building reliable, performant systems across cloud and AI domains. I care about product impact, clear architecture, and measurable results.</p>
+                <ul class="quick-stats">
+                    <li>Cloud and backend engineering</li>
+                    <li>AI research and applied ML</li>
+                    <li>Product-minded and delivery driven</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <article class="item">
+                        <h3>Sakanly Real Estate Platform</h3>
+                        <p class="meta">Software Engineer</p>
+                        <ul class="bullets">
+                            <li>Delivered platform features improving discovery and conversion for real estate listings.</li>
+                            <li>Implemented scalable services and APIs with attention to performance and reliability.</li>
+                            <li>Collaborated across product and design to ship measurable improvements.</li>
+                        </ul>
+                    </article>
+                    <article class="item">
+                        <h3>AI Research and Engineering</h3>
+                        <p class="meta">Projects and Labs</p>
+                        <ul class="bullets">
+                            <li>Built prototypes applying machine learning to real-world problems.</li>
+                            <li>Evaluated model performance and optimized training and inference pipelines.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Sakanly Platform</h3>
+                        <p>Search and discovery platform for real estate with performant backend and clean UX.</p>
+                        <ul class="tags">
+                            <li>APIs</li>
+                            <li>Search</li>
+                            <li>Cloud</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>AI Research</h3>
+                        <p>Explorations in model training, evaluation, and deployment for practical applications.</p>
+                        <ul class="tags">
+                            <li>ML</li>
+                            <li>Data</li>
+                            <li>Optimization</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Cloud</li>
+                    <li>APIs</li>
+                    <li>Databases</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>AI/ML</li>
+                </ul>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <p>Details available in the CV. Coursework emphasizes computer science fundamentals, data, and systems.</p>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Open to opportunities and collaborations.</p>
+                <ul class="contact-list">
+                    <li><a href="mailto:https://www.linkedin.com/in/mah-atef/">LinkedIn</a></li>
+                    <li><a href="resume_mahmoud_atef.pdf" target="_blank" rel="noopener">Download CV</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Mahmoud Atef</p>
+            <ul class="social">
+                <li><a href="#contact">Email</a></li>
+            </ul>
+        </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
