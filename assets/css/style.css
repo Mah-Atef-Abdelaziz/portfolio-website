@@ -257,6 +257,49 @@ h2 {
     background: var(--card);
     box-shadow: var(--shadow);
 }
+.form {
+    max-width: 640px;
+    margin: 12px auto 0;
+    text-align: left;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+}
+.form-group {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+}
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+}
+.form-note {
+    color: var(--muted);
+    margin: 8px 0 0;
+}
+.form-status {
+    margin-top: 8px;
+}
+.honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 .tags {
     display: flex;
     gap: 8px;

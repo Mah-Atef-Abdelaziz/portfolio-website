@@ -67,3 +67,29 @@ if (backToTop) {
 }
 var yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+var form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var hp = form.querySelector('input[name=\"website\"]');
+    if (hp && hp.value) return;
+    var name = (document.getElementById('name') || {}).value || '';
+    var email = (document.getElementById('email') || {}).value || '';
+    var message = (document.getElementById('message') || {}).value || '';
+    var statusEl = document.getElementById('formStatus');
+    if (!name || !email || !message) {
+      if (statusEl) statusEl.textContent = 'Please complete all fields.';
+      return;
+    }
+    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
+      if (statusEl) statusEl.textContent = 'Please enter a valid email address.';
+      return;
+    }
+    var body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\n' + message);
+    var mailto = 'mailto:?subject=' + encodeURIComponent('Portfolio contact from ' + name) + '&body=' + body;
+    window.location.href = mailto;
+    if (statusEl) statusEl.textContent = 'Thanks! Opening your email client to send the message.';
+    form.reset();
+  });
+}
