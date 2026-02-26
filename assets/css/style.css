@@ -33,6 +33,27 @@ body {
     color: var(--text);
     line-height: 1.6;
 }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    z-index: 100;
+}
 .container {
     width: 100%;
     max-width: 1040px;
