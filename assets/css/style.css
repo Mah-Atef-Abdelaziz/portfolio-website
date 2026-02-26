@@ -278,6 +278,26 @@ h2 {
     padding: 8px;
     box-shadow: var(--shadow);
 }
+.edu-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    align-items: center;
+}
+.edu-logo {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg-elev);
+    padding: 8px;
+    box-shadow: var(--shadow);
+}
+@media (max-width: 640px) {
+    .edu-grid { grid-template-columns: 1fr; }
+    .edu-logo { max-width: 120px; justify-self: center; }
+}
 .quick-stats li {
     padding: 14px 16px;
     border: 1px solid var(--border);
@@ -293,6 +313,9 @@ h2 {
     margin-bottom: 16px;
     box-shadow: var(--shadow);
     position: relative;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 14px;
 }
 .timeline .item::before {
     content: "";
@@ -303,6 +326,27 @@ h2 {
     width: 3px;
     border-radius: 3px;
     background: linear-gradient(180deg, var(--brand), var(--brand-2));
+}
+.item-media img {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-elev);
+    padding: 8px;
+}
+.item-content h3 {
+    margin-top: 0;
+}
+@media (max-width: 640px) {
+    .timeline .item {
+        grid-template-columns: 1fr;
+    }
+    .item-media img {
+        width: 80px;
+        height: 80px;
+    }
 }
 .timeline .meta {
     color: var(--muted);
