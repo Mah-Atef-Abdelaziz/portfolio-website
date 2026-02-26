@@ -161,8 +161,8 @@ img {
     margin-bottom: 10px;
 }
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     max-width: 160px;
     max-height: 160px;
     border-radius: 50%;
@@ -287,12 +287,12 @@ h2 {
 }
 .edu-grid {
     display: grid;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 180px 1fr;
     gap: 16px;
     align-items: center;
 }
 .edu-logo {
-    max-width: 140px;
+    max-width: 180px;
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -303,7 +303,7 @@ h2 {
 }
 @media (max-width: 640px) {
     .edu-grid { grid-template-columns: 1fr; }
-    .edu-logo { max-width: 120px; justify-self: center; }
+    .edu-logo { max-width: 140px; justify-self: center; }
 }
 .quick-stats li {
     padding: 14px 16px;
@@ -321,7 +321,7 @@ h2 {
     box-shadow: var(--shadow);
     position: relative;
     display: grid;
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 128px 1fr;
     gap: 14px;
 }
 .timeline .item::before {
@@ -335,8 +335,8 @@ h2 {
     background: linear-gradient(180deg, var(--brand), var(--brand-2));
 }
 .item-media img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -351,8 +351,8 @@ h2 {
         grid-template-columns: 1fr;
     }
     .item-media img {
-        width: 80px;
-        height: 80px;
+        width: 96px;
+        height: 96px;
     }
 }
 .timeline .meta {
