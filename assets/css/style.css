@@ -202,6 +202,27 @@ img {
     border: none;
     color: #fff;
 }
+.btn.youtube {
+    background: #ef4444;
+    border: none;
+    color: #fff;
+}
+.btn.linkedin {
+    background: #0a66c2;
+    border: none;
+    color: #fff;
+}
+.btn.github {
+    background: #24292f;
+    border: none;
+    color: #fff;
+}
+.btn.soft {
+    background: #1f2937;
+}
+[data-theme="light"] .btn.soft {
+    background: #e2e8f0;
+}
 .btn:hover,
 .btn:focus-visible {
     transform: translateY(-1px);
